@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <!-- Chart.js -->
+        <script src="chart.bundle.min.js" ></script>
+
+        <!-- Required meta tags for bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="bootstrap.min.css" >
+        <script src="jquery-3.3.1.slim.min.js" ></script>
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm">
+                    <div class="alert alert-primary" role="alert">
+                        Number of bins for the histogram
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(5)">5 bins</button> &nbsp;
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(8)">8 bins</button> &nbsp;
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(10)">10 bins</button> &nbsp;
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(15)">15 bins</button> &nbsp;
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(20)">20 bins</button> &nbsp;
+                        <button type="button" class="btn btn-primary btn-lg" onclick="plot_data(30)">30 bins</button> &nbsp;
+                    </div>
+                    <div class="alert alert-success " role="alert">
+                            Paste data below
+                    </div>
+                    <div class="row justify-content-center" >
+                            <textarea rows="30" cols="40" id="myData"></textarea>
+                    </div>
+              </div>
+              <div class="col-sm">
+                    <div class="alert alert-success " role="alert">
+                            Plain data
+                    </div>
+                    <div class="row justify-content-center">
+                            <canvas id="data_chart" width="400" height="150"></canvas>
+                    </div>
+                    <div class="alert alert-success " role="alert">
+                            Data Histogram
+                    </div>
+                    <div class="row justify-content-center">
+                            <canvas id="frequency_chart" width="400" height="150"></canvas>
+                    </div>
+               </div>
+            </div>
+          </div>
+          <script src="code.js"></script>
+
+    </body>
+</html>
